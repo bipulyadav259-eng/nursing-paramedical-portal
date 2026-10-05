@@ -1,0 +1,6 @@
+{
+  "name": "Nursing & Paramedical Admission Portal",
+  "description": "Comprehensive admission portal for Nursing and Paramedical courses, entrance exams, notifications, results, colleges, and verified inquiries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

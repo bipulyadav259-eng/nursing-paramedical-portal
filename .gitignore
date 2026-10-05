@@ -1,0 +1,58 @@
+# ===================================================================
+# Nursing & Paramedical Admission Portal - Git Ignore Rules
+# ===================================================================
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Node & dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Production build artifacts
+dist/
+build/
+*.tsbuildinfo
+
+# Database and data storage (DO NOT COMMIT SENSITIVE PRODUCTION/USER DATA)
+portal_database.json
+**/portal_database.json
+data/portal_database.json
+data/portal_database.tmp.*
+data_backups/
+data/backups/
+backups/
+*.tmp
+*.bak
+
+# Student confidential document uploads & sensitive files
+secure_uploads/
+data/secure_documents/
+**/secure_documents/
+*.pdf
+*.bin
+
+# Public uploads & dynamically generated media
+public/uploads/*
+!public/uploads/.gitkeep
+public/documents/*
+!public/documents/.gitkeep
+
+# System & OS artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE & Editor folders
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
